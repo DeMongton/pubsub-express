@@ -145,12 +145,18 @@ app.post("/publish/*", async (req, res, next) => {
   //console.log(topic);
 });
 
+app.post("/event", async (req, res, next) => {
+console.log(req.body);
+})
+
 // if all routes fail:
 app.use((req, res, next) => {
   const error = new Error("Resource Not Found");
   error.statusCode = 500;
   next(error);
 });
+
+
 
 app.use(apiErrorHandler);
 app.listen(port, () => console.log(`now running at http://localhost:${port}`));

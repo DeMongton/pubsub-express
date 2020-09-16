@@ -28,7 +28,7 @@ BODY: { url: "http://localhost:8000/event"}
 
 e.g. 
 
-`$ curl -X POST -d '{ "url": "http://localhost:8001/event"}' http://localhost:8000/subscribe/topic1`
+`$ curl -X POST -d '{ "url": "http://localhost:8000/event"}' http://localhost:8000/subscribe/topic1`
 
 The above curl command  would create a subscription for all events of {TOPIC} and forward data to http://localhost:8000/event upon a message being published (see next section).
 
