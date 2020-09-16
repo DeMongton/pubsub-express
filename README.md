@@ -1,6 +1,6 @@
 # pubsub-express
 
-pub-sub express is a lite implementation of the publish/subscribe pattern written in Express.
+pub-sub express is a lite implementation of the publish/subscribe model written in Express.
 
 ## Prerequisite
 
